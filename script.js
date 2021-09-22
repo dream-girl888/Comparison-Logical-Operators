@@ -4,6 +4,7 @@ let age = 18;
 let isfemale = true;
 let driverStatus = "bob";
 let myAge = 24;
+let firstName = "Henk";
 let totalAmount = 50;
 
 //testdata
@@ -12,6 +13,7 @@ let age = 16;
 let isfemale = false;
 let driverStatus = "bb"; 
 let myAge = 100;
+let firstName = "Sarah";
 let totalAmount = 100;
 */
 
@@ -55,9 +57,9 @@ if (myAge >= 18 && myAge <= 25) {
     console.log("Je krijgt 50% korting!");
 }
 
-let firstName = "Henk";
 
-if (firstName == "Bram" || firstName == "Sarah") {
+
+if (firstName === "Bram" || firstName === "Sarah") {
     console.log("gratis bier");
 } else {
     console.log("geen gratis bier");
@@ -79,3 +81,15 @@ if (totalAmount <= 25) {
 else {
     console.log("U krijgt gratis fles champagne");
 }
+
+/* alternatief zonder gebruik van && en ||, leest van boven naar onder-->steeds kleiner bedrag
+if (totalAmount >= 100) {
+    console.log("gratis flesje champagne.");
+  } else if (totalAmount > 50) {
+    console.log("gratis portie nachos");
+  } else if (totalAmount > 25) {
+    console.log("gratis (vega)bitterballen");
+  } else {
+    console.log("Helaas geen korting, maar leuk dat je er bent");
+  }
+*/
